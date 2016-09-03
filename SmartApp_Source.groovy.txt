@@ -453,9 +453,9 @@ def LevelOnPlay(room) {
 //Get the first matching room player name, or the first player with name *.
 def getRoomIndexFromPlayerName(player) {
     if(playerA1 == "*" || playerA1 == player || playerB1 == "*" || playerB1 == player) return 1;
-    else if(playerA2 == "*" || playerA2 == player || playerB2 == "*" || playerB2 == player) return 1;
-    else if(playerA3 == "*" || playerA3 == player || playerB3 == "*" || playerB3 == player) return 1;
-    else if(playerA4 == "*" || playerA4 == player || playerB4 == "*" || playerB4 == player) return 1;
-    else if(playerA5 == "*" || playerA5 == player || playerB5 == "*" || playerB5 == player) return 1;
+    else if(playerA2 == "*" || playerA2 == player || playerB2 == "*" || playerB2 == player) return 2;
+    else if(playerA3 == "*" || playerA3 == player || playerB3 == "*" || playerB3 == player) return 3;
+    else if(playerA4 == "*" || playerA4 == player || playerB4 == "*" || playerB4 == player) return 4;
+    else if(playerA5 == "*" || playerA5 == player || playerB5 == "*" || playerB5 == player) return 5;
     else return -1;
 }
